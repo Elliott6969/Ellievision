@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Magazine Viewer</title>
+    <style>
+        /* CSS for Grid Layout */
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .magazine-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .magazine {
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .magazine:hover {
+            transform: scale(1.05);
+        }
+        .magazine img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+        }
+        /* Additional styling as needed */
+    </style>
+</head>
+<body>
+
+<div class="magazine-container">
+    <h1>Welcome to The Ellievision</h1>
+    <p>Click on a zine to start reading.</p>
+
+    <!-- Magazines -->
+    <div class="magazine" onclick="openMagazine('magazine1')">
+        <img src="TITLE#1.jpg" alt="Magazine 1" />
+    </div>
+    <!-- Add more magazines here -->
+</div>
+
+<script>
+    // JavaScript for handling magazine opening
+    function openMagazine(magazineId) {
+        // Logic to open the selected magazine
+        // For example, redirecting to another HTML page with the magazine content
+    }
+</script>
+
+</body>
+</html>
